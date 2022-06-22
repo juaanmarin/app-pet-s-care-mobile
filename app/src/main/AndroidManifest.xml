@@ -15,6 +15,16 @@
         <activity android:name=".Profile" />
         <activity android:name=".Veterinarios" />
         <activity android:name=".Home" />
+        <activity android:name=".MainActivityclinica"></activity>
+        <activity android:name=".MainActivityhome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivityRegistro"></activity>
+        <activity android:name=".MainActivityVeterinario"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
