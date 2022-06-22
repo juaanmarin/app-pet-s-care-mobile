@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ActividadAndrod">
+        <activity android:name=".MainActivityRegistro"></activity>
         <activity android:name=".MainActivityVeterinario"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
