@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Veterinarios">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="357dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Registrar Veterinarios"
+        android:textColor="#151414"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textNombre"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/textApellido"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Apellido"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textSexo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNombre" />
+
+    <EditText
+        android:id="@+id/textSexo"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Sexo"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textApellido" />
+
+    <EditText
+        android:id="@+id/textCorreo"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Correo Electronico"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textEspecialidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSexo" />
+
+    <EditText
+        android:id="@+id/textEspecialidad"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Especialidad"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textContraseña"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCorreo" />
+
+    <EditText
+        android:id="@+id/textContraseña"
+        android:layout_width="357dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEspecialidad" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="357dp"
+        android:layout_height="55dp"
+        android:onClick="btnRegistroV"
+        android:text="Registrar"
+        android:textColor="#F8F0F0"
+        android:textSize="18sp"
+        app:backgroundTint="#519EDA"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textContraseña" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="357dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="btnRegresar"
+        android:text="Volver"
+        android:textColor="#F8F0F0"
+        android:textSize="18sp"
+        app:backgroundTint="#519EDA"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

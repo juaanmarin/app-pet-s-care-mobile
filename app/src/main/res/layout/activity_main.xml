@@ -6,53 +6,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="#F6F9FA"
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Again!" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/title"
+        android:layout_margin="8dp"/>
 
-    <TextView
+    <ImageView
+        android:id="@+id/imgPaisaje"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Wellcome back you´ve been missed" />
+        android:layout_height="90dp"
+        android:src="@drawable/varios"
+        android:layout_margin="10dp"/>
+
     <EditText
+
+        android:id="@+id/txtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter username"
+        android:layout_margin="15dp"
+        android:hint="Ingresar usuario"
         android:minHeight="48dp" />
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/txtContraseña"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="enter your Password"
+        android:hint="Ingresa contraseña"
+        android:layout_margin="15dp"
         android:drawableEnd="@drawable/ic_search_login"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:pointerIcon="zoom_in"
         android:drawableRight="@drawable/ic_search_login" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Recovery password" />
+
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#12A9DC"
+        android:layout_margin="10dp"
         android:ems="10"
         android:onClick="btnLogin"
-        android:text="Ingresar"/>
+        android:text="Ingresar"
+        app:backgroundTint="#00E5FF" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#12A9DC"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:onClick="btnTipo"
+        android:text="Registrarse"
+        app:backgroundTint="#00E5FF" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Recovery password" />
+        android:layout_margin="15dp"
+        android:text="Recordar Contraseña" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Or continue with" />
+        android:layout_margin="25dp"
+        android:text="Registrate con" />
 
     <LinearLayout
         android:layout_width="match_parent"
