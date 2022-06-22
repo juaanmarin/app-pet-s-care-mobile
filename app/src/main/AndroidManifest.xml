@@ -9,6 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ActividadAndrod">
+        <activity android:name=".Clinica"></activity>
+        <activity android:name=".TipoUser" />
+        <activity android:name=".RegistroUsuarios" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Veterinarios" />
+        <activity android:name=".Home" />
         <activity android:name=".MainActivityclinica"></activity>
         <activity android:name=".MainActivityhome">
             <intent-filter>
